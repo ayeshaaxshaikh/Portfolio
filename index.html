@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="user">
+            <img src="images/profile-pic.jpg">
+            <h3 class="name">Ayesha Tabassum</h3>
+            <p class="post">front end developer</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="home" id="home">
+            <h3>hi there...</h3>
+            <h3 class="name">my name is <span>ayesha tabassum</span></h3>
+            <h3 class="post">i am a <span class="typing-text"></span></h3>
+
+            <a href="#"><button class="btn">hire me</button></a>
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="heading">about me</h1>
+            <div class="content">
+                <h3 class="name">my name is <span>ayesha tabassum</span></h3>
+                <p>An aspiring Web UI Full Stack Learning fresher
+                    who is trying to seek a role to enhance and
+                    explore my technical knowledge in your
+                    company.</p>
+            </div>
+
+            <div class="skills">
+                <div class="progress">
+                    <h3>HTML <span>80%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>CSS <span>80%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>javaScript <span>70%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>react JS <span>70%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="project" id="project">
+            <h1 class="heading">my project</h1>
+            <div class="box-container">
+                <div class="box">
+                    <h4>project name: online video tutorial library</h4>
+                    <p><span>description:</span>  Understanding how to design a Video
+                        Library like YouTube application that allows admin
+                        to upload, modify and delete videos. Customer can
+                        watch videos after register and login.</p>
+
+                    <div class="technology">technology used:
+                        <ul>
+                            <li>Frontend: HTML, CSS, JavaScript, jQuery</li>
+                            <li>Backend: Node JS, Express JS and MongoD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <h1 class="heading">my education</h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="year">2023</div>
+                    <h3>UI fullstack web development</h3>
+                    <p>naresh it, hyderabad</p>
+                </div>
+                <div class="box">
+                    <div class="year">2020 - 2023</div>
+                    <h3>BSc</h3>
+                    <p>Somaiya University</p>
+                    <p>Mumbai, Maharashtra</p>
+                </div>
+                <div class="box">
+                    <div class="year">2020</div>
+                    <h3>HSC</h3>
+                    <p>Somaiya University</p>
+                    <p>Mumbai, Maharashtra</p>
+                </div>
+                <div class="box">
+                    <div class="year">2018</div>
+                    <h3>SSC</h3>
+                    <p>Mumbai, Maharashtra</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="heading">contact me</h1>
+            <div class="row">
+                <form>
+                    <input type="text" class="box" placeholder="first name">
+                    <input type="text" class="box" placeholder="last name">
+                    <input type="email" class="box" placeholder="your email">
+                    <input type="mobile" class="box" placeholder="your mobile number">
+                    <textarea class="box message" placeholder="message"></textarea>
+                    <input type="submit" value="message" class="btn">
+                </form>
+
+                <div class="content">
+                    <div class="icons">
+                        <h3><i class="fas fa-map-market-alt"></i> address </h3>
+                        <p>Mumbai, India 400070</p>
+                    </div>
+                    <div class="icons">
+                        <h3><i class="fas fa-envelope"></i> email </h3>
+                        <p>ayesha.shaikh0318@gmail.com</p>
+                    </div>
+                    <div class="icons">
+                        <h3><i class="fas fa-phone"></i> phone </h3>
+                        <p>+919136350318</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="theme-toggler">
+        <span style="background: linear-gradient(deeppink, purple);"></span>
+        <span style="background: linear-gradient(lightgreen, crimson);"></span>
+        <span style="background: linear-gradient(blueviolet, deeppink);"></span>
+        <span style="background: linear-gradient(coral, blueviolet);"></span>
+        <span style="background: linear-gradient(#999, #111);"></span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script>
+        var type = new Typed('.typing-text', {
+            strings: [ 'front end developer' ],
+            typeSpeed: 120,
+            loop: true
+        });
+
+        let themeColor = document.querySelectorAll('.theme-toggler span');
+        themeColor.forEach(color => color.addEventListener('click', ()=>{
+            let background = color.style.background;
+            document.querySelector('body').style.background = background;
+        }));
+    </script>
+</body>
+</html>
